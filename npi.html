@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NPI Registry Mirror (DEMO)</title><link rel="stylesheet" href="assets/style.css"></head>
+<body data-page="npi">
+<div id="demo-banner">DEMO — synthetic records, not a verification source</div>
+<header class="hdr"><div class="seal"></div><h1>NPI Registry Mirror (DEMO)</h1></header>
+<main>
+<div class="card"><h2>Search</h2>
+<form id="search-form" novalidate><div class="row"><label>NPI<input type="text" id="npi" autocomplete="off"></label><label>Last name (optional)<input type="text" id="lastName" autocomplete="off"></label></div>
+<button id="search-btn" type="submit">Search</button><div id="form-error" role="alert"></div></form>
+<div id="searching">Searching…</div></div>
+<section id="results" class="card"><h2>Results</h2>
+<p id="result-count"></p><div id="record-wrap"></div>
+<div class="cap">Machine-readable summary</div><p id="record-line"></p>
+<div class="meta">Query reference: <span id="query-ref"></span> &nbsp;|&nbsp; Searched at: <span id="searched-at"></span></div></section>
+</main>
+<footer><strong>DEMO — synthetic records, not a verification source</strong><br>Synthetic demo data. Not affiliated with any real organization.</footer>
+<script src="assets/data.js"></script><script src="assets/app.js"></script></body></html>
